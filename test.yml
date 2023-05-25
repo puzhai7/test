@@ -1,0 +1,8 @@
+---
+- name: Test
+  hosts: all
+  remote_user: inno
+
+  tasks:
+  - name: Ping
+    ping:
