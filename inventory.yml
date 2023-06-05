@@ -1,0 +1,16 @@
+---
+all:
+  hosts:
+    semaphore:
+      ansible_host: 10.70.39.249
+      ansible_user: inno
+    rundeck:
+      ansible_host: 10.70.39.250
+      ansible_user: inno
+  children:
+    sem:
+      hosts:
+        semaphore:
+    run:
+      hosts:
+        rundeck:
