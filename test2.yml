@@ -1,0 +1,9 @@
+---
+- name: Display hostname and IP address
+  hosts: all
+  gather_facts: yes
+
+  tasks:
+    - name: Print hostname and IP address
+      debug:
+        msg: "Hostname: {{ inventory_hostname }}, IP address: {{ ansible_host }}"
