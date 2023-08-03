@@ -1,0 +1,7 @@
+---
+- name: ping
+  hosts: localhost
+  tasks:
+    - name: Ping
+      ping:
+...
